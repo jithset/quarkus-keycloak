@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  quarkus-postgresql:
+    extends:
+      file: postgres-docker.yml
+      service: quarkus-postgresql
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U quarkususer -d keycloak_quarkus_db" ]
+    networks:
+      - quarkus-network
+
+  quarkus-keycloak:
+    extends:
+      file: keycloak-docker.yml
+      service: quarkus-keycloak
+    depends_on:
+      quarkus-postgresql:
+        condition: service_healthy
+    networks:
+      - quarkus-network
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8085:8080
+    networks:
+      - quarkus-network
+
+networks:
+  quarkus-network:
+    driver: bridge

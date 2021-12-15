@@ -1,0 +1,114 @@
+{
+  "realm": "dcdsnlarealm",
+  "users": [
+    {
+      "id": "cc4cd034-8cc4-46e3-8e3b-4a70f2dde82d",
+      "createdTimestamp": 1634633939780,
+      "username": "admin@localhost.com",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Admin",
+      "lastName": "Administrator",
+      "email": "admin@localhost.com",
+      "credentials": [
+        {
+          "id": "77ed08ca-15d1-4892-b12a-c85ba0082318",
+          "type": "password",
+          "createdDate": 1635941062028,
+          "secretData": "{\"value\":\"vhMDU0uWOzUpynuhcyZGsXkMZ6GKDTMj6D5zN5UPjr6A+2MwDM+8iw8FYfyUtrQaV5ulBuFWdBK1lNUls82cYg==\",\"salt\":\"gwhppnToodAVn/gQerg7jw==\",\"additionalParameters\":{}}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "default-roles-dcdsnlarealm"
+      ],
+      "notBefore": 1635932684,
+      "groups": [
+        "/Admins",
+        "/Users"
+      ]
+    },
+    {
+      "id": "26e13b8f-2ce9-4624-ae7f-7b03adb4c2f5",
+      "createdTimestamp": 1635686085445,
+      "username": "service-account-dcd_snla_core_service",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": false,
+      "serviceAccountClientId": "dcd_snla_core_service",
+      "credentials": [],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "default-roles-dcdsnlarealm"
+      ],
+      "clientRoles": {
+        "realm-management": [
+          "realm-admin"
+        ]
+      },
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "d375b5f5-9194-442d-a0ff-d09d86eb3b20",
+      "createdTimestamp": 1635941138080,
+      "username": "superadmin@snla.com",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Super",
+      "lastName": "Administrator",
+      "email": "superadmin@snla.com",
+      "credentials": [
+        {
+          "id": "7d37454b-cf6a-46ac-bf40-36599bd0b545",
+          "type": "password",
+          "createdDate": 1635941187569,
+          "secretData": "{\"value\":\"n8iWDBnix4CEnkKA+fsyWBkPzzrDXCdZVfqPzffSHL2E1y7+LdgymMGGJO+RF1ZGmNVH6AnfOkk/l36xvyQXXA==\",\"salt\":\"+UsEye+33BGbFKqGgEcwQA==\",\"additionalParameters\":{}}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "default-roles-dcdsnlarealm",
+        "ROLE_SUPER_ADMIN"
+      ],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "22557881-7a85-47fc-a276-f51b702ef4d1",
+      "createdTimestamp": 1634634348496,
+      "username": "user@localhost.com",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": true,
+      "firstName": "Mobile",
+      "lastName": "User",
+      "email": "user@localhost.com",
+      "credentials": [
+        {
+          "id": "a3b26a63-29ca-4336-a333-a814ed139b7c",
+          "type": "password",
+          "createdDate": 1634634405437,
+          "secretData": "{\"value\":\"X5MSRxWfNE/y0p5P0XfZnlUkLCoqtEWSfNsLG3PeniQJKm4uZZQuVgE+eh8nMDYTZ6IPi2hOENzNqCJB5tL/+Q==\",\"salt\":\"zKTheWWtw47pSOD4ocA9+w==\",\"additionalParameters\":{}}",
+          "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+        "default-roles-dcdsnlarealm"
+      ],
+      "notBefore": 0,
+      "groups": [
+        "/Users"
+      ]
+    }
+  ]
+}

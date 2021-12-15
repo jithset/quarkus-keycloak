@@ -1,0 +1,15 @@
+# This configuration is intended for development purpose
+version: '3.8'
+services:
+  quarkus-postgresql:
+    image: postgres:13.4
+    volumes:
+      #       - ~/volumes/snla/dcd-snla-core-service/postgresql/:/var/lib/postgresql/data/
+      - ./dbscripts:/docker-entrypoint-initdb.d/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 127.0.0.1:5432:5432
